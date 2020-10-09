@@ -1,0 +1,66 @@
+{
+	
+	"status": "ok",
+	"totalResults": 6,
+	"Fleet": [{
+			"Truck": {
+				"id": "12345GHJ",
+				"name": "OilTank"
+			},
+			"driver": "Sarah driverlady",
+			"summary": "Deliver oil to businesses in town abcd",
+			"description": "Deliver oil to businesses in town abcd drive from office to this town before 01 January and return before 10 January. More detailed notes about the job are added here",
+			"DateJobSubmitted": "2020-07-13T18:15:00Z"
+		},
+		{
+			"Truck": {
+				"id": "789456GGY",
+				"name": "Frozen Food"
+			},
+			"driver": "Mike Andrews",
+			"summary": "Deliver frozen food to businesses in town abcd",
+			"description": "Deliver oil to businesses in town abcd drive from office to this town before 01 January and return before 10 January. More detailed notes about the job are added here",
+			"DateJobSubmitted": "2020-07-13T18:15:00Z"
+		},
+		{
+			"Truck": {
+				"id": null,
+				"name": "Container"
+			},
+			"driver": "Peter David",
+			"summary": "Deliver container to businesses in town abcd",
+			"description": "Deliver oil to businesses in town abcd drive from office to this town before 01 January and return before 10 January. More detailed notes about the job are added here",
+			"DateJobSubmitted": "2020-07-13T18:15:00Z"
+		},
+		{
+			"Truck": {
+				"id": "7745HHJK",
+				"name": "Container"
+			},
+			"driver": "Jimmy Joshua",
+			"summary": "Deliver container to businesses in town abcd",
+			"description": "Deliver oil to businesses in town abcd drive from office to this town before 01 January and return before 10 January. More detailed notes about the job are added here",
+			"DateJobSubmitted": "2020-07-13T18:15:00Z"
+		},
+		{
+			"Truck": {
+				"id": null,
+				"name": "Animal Food Truck"
+			},
+			"driver": "Samantha Duke",
+			"summary": "Deliver food to businesses in town abcd",
+			"description": "Deliver animal food to businesses in town abcd drive from office to this town before 01 January and return before 10 January. More detailed notes about the job are added here",
+			"DateJobSubmitted": "2020-07-13T18:15:00Z"
+		},
+		{
+			"Truck": {
+				"id": "12567JK",
+				"name": "Oil Tank"
+			},
+			"driver": "Kelvin Daniels",
+			"summary": "Deliver oil to businesses in town abcd",
+			"description": "Deliver oil to businesses in town abcd drive from office to this town before 01 January and return before 10 January. More detailed notes about the job are added here",
+			"DateJobSubmitted": "2020-07-13T18:15:00Z"
+		}
+	]
+}

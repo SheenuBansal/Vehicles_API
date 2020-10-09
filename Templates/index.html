@@ -1,0 +1,57 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+
+  
+
+  <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>Driver</th>
+                      <th>Summary</th>
+                      <th>Description</th>
+                      <th>DateJobSubmitted</th>
+                    </tr>
+                  </thead>
+                  
+                  <tbody>
+                    {% for j in jsdata.get("Fleet") %} 
+                      
+                    <tr>
+                      <td>{{ j["Truck"]["id"]  }}</td>
+
+                      <td> {{ j["Truck"]["name"]  }}</td>
+                      <td>{{ j["driver"]  }}</td>
+                      <td>{{ j["summary"]  }}</td>
+                      <td>{{ j["description"]  }}</td>
+                      <td>{{ j["DateJobSubmitted"]  }}</td>
+                      
+                    </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+  </div>
+
+
+  <section class="page-section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Our Promise</span>
+              <span class="section-heading-lower">To You</span>
+            </h2>
+            <p class="mb-0">When you walk into our shop to start your day, we are dedicated to providing you with friendly service, a welcoming atmosphere, and above all else, excellent products made with the highest quality ingredients. If you are not satisfied, please let us know and we will do whatever we can to make things right!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

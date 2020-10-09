@@ -1,0 +1,62 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<!-- Masthead -->
+  <header class="masthead text-white text-center">
+    <div class="overlay"></div>
+      <div class="container">
+        <div class="card-body">
+        <div class="row">
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+            <form>
+              <div class="form-row">
+                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                  <input type="text" name="truck_name_input" class="form-control form-control-lg" placeholder="Enter truck-name">
+                </div>
+                <div class="col-12 col-md-3">
+                  <button type="submit" class="btn btn-block btn-lg btn-primary">Search</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+ <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>Driver</th>
+                      <th>Summary</th>
+                      <th>Description</th>
+                      <th>DateJobSubmitted</th>
+                    </tr>
+                  </thead>
+                  
+                  <tbody>
+                    {% for key,value in data.iterrows() %} 
+                      
+                    <tr>
+                      <td>{{ value["Truck"]["id"]  }}</td>
+                      <td>{{ value["Truck"]["name"]  }}</td>
+                      <td>{{ value["driver"]  }}</td>
+                      <td>{{ value["summary"]  }}</td>
+                      <td>{{ value["description"]  }}</td>
+                      <td>{{ value["DateJobSubmitted"]  }}</td>
+                      
+                    </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+  </div>
+   
+
+  
+
+{% endblock %}
